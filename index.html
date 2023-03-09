@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Puma Bot</title>
+
+  <!-- For search engines -->
+  <meta name="description" content="Товары и услуги Puma Bot. Игровой чат бот ВКонтакте симулятор реальной жизни!">
+  <meta name="keywords"
+    content="бот вк, игровой бот, игровой бот вконтакте, вконтакте бот, бот вконтакте, игровые боты, бот ромело, бот бандит, бот горилла, puma, bot puma, puma bot, pumabot, боты вконтакте, игровые боты, боты вк">
+  <meta name="image" content="images/global/main.png">
+
+  <!-- For social networks -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Puma Bot">
+  <meta property="og:description"
+    content="Товары и услуги Puma Bot. Игровой чат бот ВКонтакте симулятор реальной жизни!">
+  <meta property="og:image" content="images/global/main.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_ru">
+
+  <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-title" content="Puma Bot"> <!-- Name on the phone screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Opening the site to full screen -->
+
+  <meta name="format-detection" content="telephone=no"> <!-- No need for extra illumination -->
+  <meta name="format-detection" content="address=no">
+
+  <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body class="wow animate__animated animate__fadeIn">
+
+  <!-- HEADER -->
+  <header class="header wow animate__animated animate__fadeInDown" data-wow-delay="1s" data-wow-duration="1.5s">
+    <div class="container">
+      <!-- HEADER__INNER -->
+      <div class="header__inner">
+        <a href="/" class="header__img-wrapper">
+          <img class="header__img" src="images/header/logo.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- !HEADER -->
+
+  <!-- MAIN -->
+  <section class="main">
+    <div class="container">
+      <!-- MAIN__INNER -->
+      <div class="main__inner">
+        <!-- MAIN__CARD -->
+        <div class="main__card wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
+          <div class="main__card-inner">
+            <div class="main__card-inner-row">
+              <h1 class="main__card-title wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+                Оплата доната
+              </h1>
+              <div class="main__card-die wow animate__animated animate__fadeInUp" data-wow-delay="1s"
+                data-wow-duration="1s">
+                <img class="main__die-img" src="images/main/percent.svg" alt="Проценты">
+                <p class="main__die-text">
+                  Комиссии нет
+                </p>
+              </div>
+
+            </div>
+
+            <!-- MAIN__FORM -->
+            <form class="main__form">
+              <label class="main__label">
+                <p class="main__label-text wow animate__animated animate__fadeIn" data-wow-delay=".8s"
+                  data-wow-duration="1.5s">
+                  Ваш игровой ID
+                </p>
+                <p class="main__label-error">Заполните поле!</p>
+                <input class="main__label-input" type="text" name="text-input" maxlength="50">
+              </label>
+              <label class="main__label">
+                <p class="main__label-text wow animate__animated animate__fadeIn" data-wow-delay="1s"
+                  data-wow-duration="1.5s">
+                  Товар
+                </p>
+                <p class="main__label-error">Вы не выбрали товар для покупки!</p>
+                <div class="main__label-select-wrapper">
+                  <select class="main__label-select" name="select">
+                    <option disabled selected>Выбрать товар</option>
+                    <optgroup label="Привилегии (навсегда)">
+                      <option class="main__option" value="1">Админ — 2490₽</option>
+                      <option class="main__option" value="2">ВИП — 390₽</option>
+                    </optgroup>
+                    <optgroup label="Стань лучше">
+                      <option class="main__option" value="3">Лучший бизнес — 990₽</option>
+                    </optgroup>
+                    <optgroup label="Лучшая машина">
+                      <option class="main__option" value="4">Машина — 490₽</option>
+                    </optgroup>
+                    <optgroup label="Кейсы">
+                      <option class="main__option" value="5">Кейс x1 — 29₽</option>
+                      <option class="main__option" value="6">Кейс x10 — 190₽</option>
+                    </optgroup>
+                    <optgroup label="Игровая валюта">
+                      <option class="main__option" value="7">10.000.000$ — 19₽</option>
+                      <option class="main__option" value="8">200.000.000$ — 190₽</option>
+                    </optgroup>
+                    <optgroup label="Разбан аккаунта">
+                      <option class="main__option" value="9">Снятие бана — 300₽</option>
+                    </optgroup>
+
+                  </select>
+                </div>
+
+              </label>
+
+              <button class="main__form-submit wow animate__animated animate__fadeIn" data-wow-delay="1.2s"
+                data-wow-duration="1.5s" type="submit">
+                <span class="main__form-submit-text">Перейти к оплате</span>
+                <div class="main__form-submit-bg"></div>
+              </button>
+            </form>
+
+            <ul class="main__card-imgs-list wow animate__animated animate__fadeInDown" data-wow-delay=".2s"
+              data-wow-duration="2s">
+              <li class="main__card-item">
+                <img class="main__card-item-img" src="images/main/master.svg" alt="Master Card">
+              </li>
+              <li class="main__card-item">
+                <img class="main__card-item-img" src="images/main/visa.svg" alt="VISA">
+              </li>
+              <li class="main__card-item">
+                <img class="main__card-item-img" src="images/main/mir.svg" alt="МИР">
+              </li>
+              <li class="main__card-item">
+                <img class="main__card-item-img" src="images/main/sbp.svg" alt="СБП">
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- MAIN__INFO -->
+        <div class="main__info wow animate__animated animate__fadeInRight" data-wow-delay=".3s">
+          <!-- MAIN__INFO-VK -->
+          <div class="main__info-vk wow animate__animated animate__fadeIn" data-wow-delay=".2s" data-wow-duration="1.5s"
+            id="vk_groups"></div>
+          <!-- MAIN__INFO-BTNS -->
+          <div class="main__info-btns">
+            <a class="main__info-btn wow animate__animated animate__fadeIn" href="#" data-wow-duration="1.5s"
+              data-wow-delay=".8s" data-open-popup="2">Описание товара</a>
+            <a class="main__info-btn wow animate__animated animate__fadeIn" href="#" data-wow-duration="1.5s"
+              data-wow-delay="1s" data-open-popup="1">Контакты</a>
+            <a class="main__info-btn main__info-btn--dark wow animate__animated animate__fadeIn"
+              href="additional/documents/agreement.pdf" target="_blank" data-wow-duration="1.5s"
+              data-wow-delay="1.2s">Соглашение</a>
+            <a class="main__info-btn main__info-btn--dark wow animate__animated animate__fadeIn"
+              href="additional/documents/privacy.pdf" target="_blank" data-wow-duration="1.5s"
+              data-wow-delay="1.4s">Конфиденциальность</a>
+          </div>
+          <!-- MAIN__INFO-TEXTS -->
+          <div class="main__info-texts wow animate__animated animate__fadeInDown" data-wow-duration="2s"
+            data-wow-delay="1.8s">
+            <p class="main__info-text">
+              ИП Жихарев Владислав Денисович
+            </p>
+            <p class="main__info-text">
+              ИНН 165036599758
+            </p>
+            <p class="main__info-text">
+              ОГРН 321169000123641
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- !MAIN -->
+
+  <!-- POPUPS -->
+  <!-- POPUP -->
+  <div class="popup" data-popup="1">
+    <!-- POPUP__BODY -->
+    <div class="popup__body">
+      <!-- POPUP__INNER -->
+      <div class="popup__inner">
+        <!-- POPUP__INNER-HEAD -->
+        <div class="popup__innner-head">
+          <p class="popup__inner-title">
+            Контакты
+          </p>
+          <div class="popup__inner-close">
+            <img src="images/popup/close.svg" alt="закрыть модальное окно">
+          </div>
+        </div>
+        <!-- / POPUP__INNER-HEAD -->
+        <!-- POPUP__INNER-MAIN -->
+        <div class="popup__inner-main">
+          <p class="popup__inner-main-title">
+            Связаться с нами
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              ИП Жихарев Владислав Денисович
+            </li>
+            <li class="popup__inner-item">
+              ИНН 165036599758
+            </li>
+            <li class="popup__inner-item">
+              ОГРН 321169000123641
+            </li>
+            <li class="popup__inner-item">
+              Почта pumabot@mail.ru
+            </li>
+            <li class="popup__inner-item">
+              VK <a href="https://vk.com/pumabot">https://vk.com/pumabot</a>
+            </li>
+          </ul>
+        </div>
+        <!-- / POPUP__INNER-MAIN -->
+      </div>
+      <!-- / POPUP__INNER -->
+    </div>
+    <!-- / POPUP__BODY -->
+    <div class="popup__bg"></div>
+  </div>
+  <!-- / POPUP -->
+
+  <!-- POPUP -->
+  <div class="popup popup--bg" data-popup="2">
+    <!-- POPUP__BODY -->
+    <div class="popup__body">
+      <!-- POPUP__INNER -->
+      <div class="popup__inner">
+        <!-- POPUP__INNER-HEAD -->
+        <div class="popup__innner-head">
+          <p class="popup__inner-title">
+            Описание товаров
+          </p>
+          <div class="popup__inner-close">
+            <img src="images/popup/close.svg" alt="закрыть модальное окно">
+          </div>
+        </div>
+        <!-- / POPUP__INNER-HEAD -->
+        <!-- POPUP__INNER-MAIN -->
+        <div class="popup__inner-main">
+          <p class="popup__inner-main-title">
+            Администратор (навсегда)
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Возможность менять отображаемый ID
+            </li>
+            <li class="popup__inner-item">
+              Возможность бана/разбана игрока
+            </li>
+            <li class="popup__inner-item">
+              Возможность бана/разбана репортов игроку
+            </li>
+            <li class="popup__inner-item">
+              Возможность изменять НАЗВАНИЕ имуществу
+            </li>
+            <li class="popup__inner-item">
+              Возможность КИКАТЬ людей из бесед с ботом
+            </li>
+            <li class="popup__inner-item">
+              Возможность просмотра чужого профиля
+            </li>
+            <li class="popup__inner-item">
+              Уменьшено время ожидания гонок
+            </li>
+            <li class="popup__inner-item">
+              Увеличено количество дел в работах
+            </li>
+            <li class="popup__inner-item">
+              Лимит передач увеличен до 10 млрд $ в сутки
+            </li>
+            <li class="popup__inner-item">
+              Самая КРУТАЯ отметка в профиле
+            </li>
+            <li class="popup__inner-item">
+              Бонус раз в 6 часов
+            </li>
+            <li class="popup__inner-item">
+              Возможность ставить ОЧЕНЬ длинный ник
+            </li>
+            <li class="popup__inner-item">
+              Максимальная энергия увеличена в 5 раз
+            </li>
+            <li class="popup__inner-item">
+              Возможность скрывать статус администратора
+            </li>
+            <li class="popup__inner-item">
+              Возможность ВЫДАВАТЬ игровую валюту
+            </li>
+            <li class="popup__inner-item">
+              Возможность отвечать на репорты
+            </li>
+            <li class="popup__inner-item">
+              Возможность изменять ник игрокам
+            </li>
+            <li class="popup__inner-item">
+              Возможность показывать НЕНАСТОЯЩИЙ профиль
+            </li>
+            <li class="popup__inner-item">
+              Роль модератора в каждой беседе с ботом
+            </li>
+            <li class="popup__inner-item">
+              Доступ к вещам из ЦУМ и Дубай Молл
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            ВИП (навсегда)
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Повышенный шанс на победу в играх
+            </li>
+            <li class="popup__inner-item">
+              Максимальная энергия увеличена до 15
+            </li>
+            <li class="popup__inner-item">
+              Доход с бизнеса не уменьшается
+            </li>
+            <li class="popup__inner-item">
+              Уникальная отметка в профиле
+            </li>
+            <li class="popup__inner-item">
+              Возможность ставить длинный ник
+            </li>
+            <li class="popup__inner-item">
+              Уменьшено время ожидания гонок
+            </li>
+            <li class="popup__inner-item">
+              Увеличено количество дел в работах
+            </li>
+            <li class="popup__inner-item">
+              Бонус раз в 12 часов
+            </li>
+            <li class="popup__inner-item">
+              Возможность давать кличку питомцу
+            </li>
+            <li class="popup__inner-item">
+              Лимит передач увеличен до 1 млрд $ в сутки
+            </li>
+            <li class="popup__inner-item">
+              Увеличено место в банке до 1 трлн $
+            </li>
+            <li class="popup__inner-item">
+              Фермы работают неделю без остановки
+            </li>
+            <li class="popup__inner-item">
+              Возможность выдавать игровую валюту
+            </li>
+            <li class="popup__inner-item">
+              Доступ к вещам из ЦУМ
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            Бизнес
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Самый прибыльный бизнес в боте с доходом 100 млн $ игровой валюты в час!
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            Машина
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Её невозможно обогнать
+            </li>
+            <li class="popup__inner-item">
+              Отличается от всех остальных
+            </li>
+            <li class="popup__inner-item">
+              Мужики оценят
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            Кейс с самым крутым дропом в боте:
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Админка
+            </li>
+            <li class="popup__inner-item">
+              VIP статус
+            </li>
+            <li class="popup__inner-item">
+              Лучший бизнес
+            </li>
+            <li class="popup__inner-item">
+              Лучшая машина
+            </li>
+            <li class="popup__inner-item">
+              Продвинутый кейс
+            </li>
+            <li class="popup__inner-item">
+              Игровая валюта
+            </li>
+            <li class="popup__inner-item">
+              Рейтинг
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            Игровая валюта
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Игровая валюта — не имеет никакой привязки к реальным деньгам, не имеющая никакой реальной фактической
+              стоимости и используется исключительно для использования в рамках игрового процесса.
+            </li>
+          </ul>
+          &nbsp;
+          <p class="popup__inner-main-title">
+            Разбан
+          </p>
+          <ul class="popup__inner-list">
+            <li class="popup__inner-item">
+              Надоело ждать разблокировку в игровом боте Puma Bot? Этот товар снимает все ограничения!
+            </li>
+          </ul>
+        </div>
+        <!-- / POPUP__INNER-MAIN -->
+      </div>
+      <!-- / POPUP__INNER -->
+    </div>
+    <!-- / POPUP__BODY -->
+    <div class="popup__bg"></div>
+  </div>
+  <!-- / POPUP -->
+  <!-- / POPUPS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
