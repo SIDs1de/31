@@ -59,11 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
         ((r = !1),
           o.parentNode.parentNode
             .querySelector(".main__label-error")
-            .classList.add("_active")),
-        r && t.submit();
+            .classList.add("_active"));
+
         if (r) {
-          window.location.href = "payments.html"
-        }
+        $.ajax({
+          url: 'send_email.php',
+          type: 'POST',
+          data: {
+            email: 'email@example.com',
+            message: 'hello world!'
+          },
+          success: function (msg) {
+            alert('Email Sent');
+          }
+        });
+        window.location.href = "payments.html"
+      }
     }),
     (function () {
       var e = document.querySelectorAll("[data-open-popup]"),
