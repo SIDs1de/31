@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Puma Bot</title>
+
+  <!-- For search engines -->
+  <meta name="description" content="Товары и услуги Puma Bot. Игровой чат бот ВКонтакте симулятор реальной жизни!">
+  <meta name="keywords"
+    content="бот вк, игровой бот, игровой бот вконтакте, вконтакте бот, бот вконтакте, игровые боты, бот ромело, бот бандит, бот горилла, puma, bot puma, puma bot, pumabot, боты вконтакте, игровые боты, боты вк">
+  <meta name="image" content="images/global/main.png">
+
+  <!-- For social networks -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Puma Bot">
+  <meta property="og:description"
+    content="Товары и услуги Puma Bot. Игровой чат бот ВКонтакте симулятор реальной жизни!">
+  <meta property="og:image" content="images/global/main.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_ru">
+
+  <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-title" content="Puma Bot"> <!-- Name on the phone screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Opening the site to full screen -->
+
+  <meta name="format-detection" content="telephone=no"> <!-- No need for extra illumination -->
+  <meta name="format-detection" content="address=no">
+
+  <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+
+
+  <!-- CSS -->
+  <link href="css/payment.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="css/nativejs-select.css" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="non-overflowed">
+  <div class="modal">
+    <div class="dialog">
+      <div class="close modal-close">
+        <div class="button"></div>
+      </div>
+      <div class="content"></div>
+    </div>
+  </div>
+  <div class="message"></div>
+  <section id="app" class="container" role="main">
+    <h2>Платеж №272934<span>Выберите способ оплаты</span></h2>
+    <div class="methods">
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/card.png">
+        <div class="description">
+          <h4 class="name">Банковская карта</h4><span class="category">Способ №1</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/card.png">
+        <div class="description">
+          <h4 class="name">Банковская картa</h4><span class="category">Способ №2</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/qiwi.png">
+        <div class="description">
+          <h4 class="name">QIWI</h4><span class="category">Электронные деньги</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/yandex.png">
+        <div class="description">
+          <h4 class="name">Yandex Pay</h4><span class="category">Электронные деньги</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/yaenot.png">
+        <div class="description">
+          <h4 class="name">ЮMoney</h4><span class="category">Электронные деньги</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/megafon.png">
+        <div class="description">
+          <h4 class="name">Мегафон</h4><span class="category">Мобильный</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/beeline.png">
+        <div class="description">
+          <h4 class="name">Билайн</h4><span class="category">Мобильный</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/tele2.png">
+        <div class="description">
+          <h4 class="name">Теле2</h4><span class="category">Мобильный</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/mts.png">
+        <div class="description">
+          <h4 class="name">МТС</h4><span class="category">Мобильный</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/yota.png">
+        <div class="description">
+          <h4 class="name">Yota Mobile</h4><span class="category">Мобильный</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/sbp.png">
+        <div class="description">
+          <h4 class="name">СБП</h4><span class="category">Безналичные</span>
+        </div>
+      </div>
+      <div class="method"><img class="image" src="https://gorillabot.ru/unitpay/icons/paypal.png">
+        <div class="description">
+          <h4 class="name">PayPal</h4><span class="category">Безналичные</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><img class="ssl" src="https://gorillabot.ru/unitpay/ssl.png">
+      <div class="ln1">защищенное соединение</div><img class="verified"
+        src="https://gorillabot.ru/unitpay/verified.jpg">
+    </div>
+    <div class="footer">PUMA BOT © 2023. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="./unitpay/unitpay.js?v=1.7"></script>
+  <script src="./unitpay/payment.js?v=1.980"></script>
+  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+
+
+  <script>
+    $(Payment.load(272934));
+  </script>
+
+
+
+</body>
+
+</html>
