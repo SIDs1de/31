@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .querySelector(".main__label-error")
             .classList.add("_active"));
 
-        if (r) {
+      if (r) {
         $.ajax({
           url: 'send_email.php',
           type: 'POST',
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
       callback: function (e) { },
       scrollContainer: null,
       resetAnimation: !0,
-    }).init(),
-    new NativejsSelect({ selector: ".main__label-select" });
+    }).init()
+    // new NativejsSelect({ selector: ".main__label-select" });
 });
 //# sourceMappingURL=main.js.map
